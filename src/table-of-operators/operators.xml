@@ -1,0 +1,77 @@
+<table>
+  <operator name="structure!Cfield" symbol="." group="access" precedence="2" vectorizable="1" col="0" row="9"/>
+  <operator name="subscript" symbol="[]" group="access" precedence="2" vectorizable="0" col="1" row="9"/>
+  <operator name="dereference" symbol="*" group="access" precedence="3" vectorizable="0" col="0" row="8"/>
+  <operator name="method!Cinvocation" symbol="->" group="access" precedence="3" vectorizable="0" col="1" row="8"/>
+  <operator name="stride or!Crange" symbol=":" group="access" precedence="10" vectorizable="0" col="0" row="1"/>
+
+  <operator name="concatenate" symbol="[]" group="creation" precedence="1" vectorizable="1" col="2" row="10"/>
+  <operator name="structure!Ccreation" symbol="{}" group="creation" precedence="2" vectorizable="0" col="2" row="9"/>
+
+  <operator name="grouping" symbol="()" group="grouping" precedence="1" vectorizable="0" col="3" row="10"/>
+  <operator name="function call" symbol="()" group="grouping" precedence="2" vectorizable="0" col="3" row="9"/>
+
+  <operator name="exponentiation" symbol="^" group="arithmetic" precedence="3" vectorizable="1" col="4" row="8"/>
+  <operator name="increment" symbol="++" group="arithmetic" precedence="3" vectorizable="1" col="7" row="8"/>
+  <operator name="decrement" symbol="--" group="arithmetic" precedence="3" vectorizable="1" col="8" row="8"/>
+
+  <operator name="matrix!Cmultiplication" symbol="#" group="arithmetic" precedence="4" vectorizable="0" col="5" row="7"/>
+  <operator name="matrix!Cmultiplication" symbol="##" group="arithmetic" precedence="4" vectorizable="0" col="6" row="7"/>
+
+  <operator name="multiplication" symbol="*" group="arithmetic" precedence="4" vectorizable="1" col="7" row="7"/>
+  <operator name="division" symbol="/" group="arithmetic" precedence="4" vectorizable="1" col="8" row="7"/>
+
+  <operator name="modulus" symbol="MOD" group="arithmetic" precedence="4" vectorizable="1" col="4" row="7"/>
+
+  <operator name="addition" symbol="+" group="arithmetic" precedence="5" vectorizable="1" col="7" row="6"/>
+  <operator name="subtraction" symbol="-" group="arithmetic" precedence="5" vectorizable="1" col="8" row="6"/>
+
+  <operator name="minimum" symbol="&lt;" group="comparison" precedence="5" vectorizable="1" col="9" row="6"/>
+  <operator name="maximum" symbol="&gt;" group="comparison" precedence="5" vectorizable="1" col="14" row="6"/>
+
+  <operator name="equal" symbol="EQ" group="comparison" precedence="6" vectorizable="1" col="11" row="5"/>
+  <operator name="less than!Cor equal to" symbol="LE" group="comparison" precedence="6" vectorizable="1" col="10" row="5"/>
+  <operator name="greater than!Cor equal to" symbol="GE" group="comparison" precedence="6" vectorizable="1" col="13" row="5"/>
+
+  <operator name="not equal" symbol="NE" group="comparison" precedence="6" vectorizable="1" col="12" row="5"/>
+  <operator name="less than" symbol="LT" group="comparison" precedence="6" vectorizable="1" col="9" row="5"/>
+  <operator name="greater than" symbol="GT" group="comparison" precedence="6" vectorizable="1" col="14" row="5"/>
+
+  <operator name="conditional" symbol="?:" group="comparison" precedence="9" vectorizable="0" col="14" row="2"/>
+
+  <operator name="logical!Cnegation" symbol="~" group="logical" precedence="5" vectorizable="0" col="16" row="6"/>
+  <operator name="logical!Cand" symbol="&amp;&amp;" group="logical" precedence="8" vectorizable="0" col="15" row="3"/>
+  <operator name="logical!Cor" symbol="||" group="logical" precedence="8" vectorizable="0" col="16" row="3"/>
+
+  <operator name="bitwise!Cnegation" symbol="NOT" group="bitwise" precedence="5" vectorizable="1" col="17" row="6"/>
+  <operator name="bitwise!Cand" symbol="AND" group="bitwise" precedence="7" vectorizable="1" col="15" row="4"/>
+  <operator name="bitwise!Cor" symbol="OR" group="bitwise" precedence="7" vectorizable="1" col="16" row="4"/>
+  <operator name="bitwise!Cexclusive or" symbol="XOR" group="bitwise" precedence="7" vectorizable="1" col="17" row="4"/>
+
+  <operator name="compound!Cassignment" symbol="^=" group="assignment" precedence="10" vectorizable="1" col="4" row="1"/>
+  <operator name="compound!Cassignment" symbol="*=" group="assignment" precedence="10" vectorizable="1" col="7" row="1"/>
+  <operator name="compound!Cassignment" symbol="/=" group="assignment" precedence="10" vectorizable="1" col="8" row="1"/>
+  <operator name="compound!Cassignment" symbol="=" group="assignment" precedence="10" vectorizable="1" col="11" row="1"/>
+  <operator name="compound!Cassignment" symbol="&lt;=" group="assignment" precedence="10" vectorizable="1" col="9" row="1"/>
+  <operator name="compound!Cassignment" symbol="&gt;=" group="assignment" precedence="10" vectorizable="1" col="14" row="1"/>
+
+  <operator name="compound!Cassignment" symbol="#=" group="assignment" precedence="10" vectorizable="1" col="5" row="1"/>
+  <operator name="compound!Cassignment" symbol="##=" group="assignment" precedence="10" vectorizable="1" col="6" row="1"/>
+
+  <operator name="compound!Cassignment" symbol="MOD=" group="assignment" precedence="10" vectorizable="1" col="4" row="0"/>
+
+  <operator name="compound!Cassignment" symbol="EQ=" group="assignment" precedence="10" vectorizable="1" col="9" row="0"/>
+  <operator name="compound!Cassignment" symbol="LE=" group="assignment" precedence="10" vectorizable="1" col="11" row="0"/>
+  <operator name="compound!Cassignment" symbol="GE=" group="assignment" precedence="10" vectorizable="1" col="13" row="0"/>
+
+  <operator name="compound!Cassignment" symbol="+=" group="assignment" precedence="10" vectorizable="1" col="7" row="0"/>
+  <operator name="compound!Cassignment" symbol="-=" group="assignment" precedence="10" vectorizable="1" col="8" row="0"/>
+
+  <operator name="compound!Cassignment" symbol="NE=" group="assignment" precedence="10" vectorizable="1" col="10" row="0"/>
+  <operator name="compound!Cassignment" symbol="LT=" group="assignment" precedence="10" vectorizable="1" col="12" row="0"/>
+  <operator name="compound!Cassignment" symbol="GT=" group="assignment" precedence="10" vectorizable="1" col="14" row="0"/>
+
+  <operator name="compound!Cassignment" symbol="AND=" group="assignment" precedence="10" vectorizable="1" col="15" row="1"/>
+  <operator name="compound!Cassignment" symbol="OR=" group="assignment" precedence="10" vectorizable="1" col="16" row="1"/>
+  <operator name="compound!Cassignment" symbol="XOR=" group="assignment" precedence="10" vectorizable="1" col="17" row="1"/>
+</table>

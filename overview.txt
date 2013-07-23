@@ -1,0 +1,18 @@
+This library contains demostrations of IDL routines (by version), mglib
+routines, and other miscellaneous demos.
+
+:Dirs:
+  fileio
+    demos of file I/O
+  itools
+    demos of iTools
+  objectgraphics
+    demos of using object graphics
+  objectwidget
+    demos of writing widget programs as objects
+  table-of-operators
+    demo of creating a table of IDL operators
+  tiling
+    demos of tiling images
+  widgets
+    generic widget demos
