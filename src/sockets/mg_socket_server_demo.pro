@@ -94,11 +94,15 @@ end
 ;+
 ; Main routine running on the server.
 ;
-pro mg_socket_server_demo
+; :Keywords:
+;   port : in, optional, type=uint, default=14412US
+;     port to listen on
+;
+pro mg_socket_server_demo, port=port
   compile_opt strictarr
 
-  port = 14412US
-  socket, listener_lun, port, /listen, /get_lun, /rawio, $
+  _port = n_elements(port) eq 0L ? 14412US : port
+  socket, listener_lun, _port, /listen, /get_lun, /rawio, $
           read_timeout=60.0, write_timeout=60.0
   !null = timer.set(0.1, 'mg_socket_server_demo_listener_callback', $
                     listener_lun)

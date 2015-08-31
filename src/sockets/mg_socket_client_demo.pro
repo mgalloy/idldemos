@@ -83,14 +83,16 @@ end
 ; :Keywords:
 ;   server : in, optional, type=string, default=localhost
 ;     address of server to connect to
+;   port : in, optional, type=uint, default=14412US
+;     port to connect to
 ;-
-pro mg_socket_client_demo, server=server
+pro mg_socket_client_demo, server=server, port=port
   compile_opt strictarr
 
-  port = 14412US
+  _port = n_elements(port) eq 0L ? 14412US : port
   _server = n_elements(server) eq 0L ? 'localhost' : server
 
-  socket, server_lun, _server, port, /get_lun, /rawio, $
+  socket, server_lun, _server, _port, /get_lun, /rawio, $
           connect_timeout=10.0, $
           read_timeout=10.0, $
           write_timeout=10.0
